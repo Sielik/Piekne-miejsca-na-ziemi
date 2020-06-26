@@ -1,106 +1,97 @@
-body
-{
+body {
 	background-color: #191d21;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 20px;
 	color: #efefef;
-}
-
-a:link 
-{
-    color: #fff;
-	text-decoration: none;
-}
-
-a:visited 
-{
-    color: #fff;
-}
-
-a:hover 
-{
-    color: #fff;
-}
-
-a:active 
-{    
+  }
+  
+  a:link {
 	color: #fff;
-}
-
-.container
-{
+	text-decoration: none;
+  }
+  
+  a:visited {
+	color: #fff;
+  }
+  
+  a:hover {
+	color: #fff;
+  }
+  
+  a:active {
+	color: #fff;
+  }
+  
+  .container {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1000px;
 	text-align: center;
 	padding: 0;
 	margin-bottom: 25px;
-}
-
-.postcard
-{
+  }
+  
+  .postcard {
 	display: inline-block;
 	width: 460px;
 	text-align: center;
 	padding: 5px;
-}
-
-.postcard p
-{
+  }
+  
+  .postcard p {
 	padding: 5px;
 	margin-top: 10px;
-}
-
-h1
-{
+  }
+  
+  h1 {
 	font-size: 32px;
 	font-weight: 400;
 	color: #39a5f1;
-	margin-top: 45px;	
+	margin-top: 45px;
 	margin-bottom: 30px;
 	letter-spacing: 10px;
 	text-transform: uppercase;
-}
-
-/* Hover effects */
-
-.photo1
-{
+  }
+  
+  /* Hover effects */
+  
+  .photo1 {
 	width: 450px;
+	-webkit-transition: -webkit-transform 0.2s ease-in-out;
+	transition: -webkit-transform 0.2s ease-in-out;
+	-o-transition: transform 0.2s ease-in-out;
 	transition: transform 0.2s ease-in-out;
-}
-.photo1:hover
-{
+	transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  }
+  .photo1:hover {
 	-webkit-transform: scale(0.9);
 	-ms-transform: scale(0.9);
 	transform: scale(0.9);
-}
-
-
-.photo2
-{
+  }
+  
+  .photo2 {
 	width: 450px;
-	transition: transform	0.2s ease-in-out;
-}
-.photo2:hover
-{
--webkit-transform: scale(0.95) rotate(5deg);
--ms-transform: scale(0.95) rotate(5deg);
-transform: scale(0.95) rotate(5deg);
-}
-
-.photo3
-{
+	-webkit-transition: -webkit-transform 0.2s ease-in-out;
+	transition: -webkit-transform 0.2s ease-in-out;
+	-o-transition: transform 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  }
+  .photo2:hover {
+	-webkit-transform: scale(0.95) rotate(5deg);
+	-ms-transform: scale(0.95) rotate(5deg);
+	transform: scale(0.95) rotate(5deg);
+  }
+  
+  .photo3 {
 	width: 450px;
-}
-.overlay
-{
+  }
+  .overlay {
 	position: relative;
 	width: 450px;
 	height: 278px;
-}
-.overlay .link
-{
+  }
+  .overlay .link {
 	position: absolute;
 	display: block;
 	width: 100%;
@@ -109,25 +100,23 @@ transform: scale(0.95) rotate(5deg);
 	left: 0px;
 	bottom: 0px;
 	opacity: 0;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out;
-}
-.overlay:hover .link
-{
+  }
+  .overlay:hover .link {
 	opacity: 0.8;
-}
-
-.photo4
-{
+  }
+  
+  .photo4 {
 	width: 450px;
-}
-.overlayT
-{
+  }
+  .overlayT {
 	position: relative;
 	width: 450px;
 	height: 278px;
-}
-.overlayT .link
-{
+  }
+  .overlayT .link {
 	position: absolute;
 	display: block;
 	width: 100%;
@@ -136,55 +125,51 @@ transform: scale(0.95) rotate(5deg);
 	left: 0px;
 	top: 0px;
 	opacity: 0;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out;
-}
-.overlayT:hover .link
-{
+  }
+  .overlayT:hover .link {
 	opacity: 0.9;
-}
-.icon
-{
+  }
+  .icon {
 	display: block;
 	top: 25%;
 	position: relative;
 	font-size: 72px;
-
-}
-.icon p
-{
+  }
+  .icon p {
 	font-size: 20px;
-}
-
-.photo5
-{
+  }
+  
+  .photo5 {
 	width: 450px;
 	height: 278px;
 	overflow: hidden;
-}
-.photo5 img
-{
+  }
+  .photo5 img {
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
-}
-.photo5:hover img
-{
+  }
+  .photo5:hover img {
 	-webkit-transform: scale(1.15);
 	-ms-transform: scale(1.15);
 	transform: scale(1.15);
-}
-
-.photo6
-{
+  }
+  
+  .photo6 {
 	width: 450px;
 	height: 278px;
 	overflow: hidden;
-}
-.photo6 img
-{
+  }
+  .photo6 img {
+	-webkit-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
 	transition: all 0.7s ease-in-out;
-}
-.photo6:hover img
-{
+  }
+  .photo6:hover img {
 	-webkit-transform: scale(1.2) rotate(-5deg);
 	-ms-transform: scale(1.2) rotate(-5deg);
 	transform: scale(1.2) rotate(-5deg);
-}
+  }
